@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xxy</title>
+    <style>
+        .fullscreen-container {
+            width: 100vw; /* 占满视口宽度 */
+            height: 100vh; /* 占满视口高度 */
+            margin: 0; /* 移除外边距 */
+            padding: 0; /* 移除内边距 */
+	    background-color: green;
+    	    display: flex; /* 使用 Flex 布局 */
+    	    flex-direction: column; /* 子元素垂直排列 */
+    	    justify-content: center; /* 垂直居中内容 */
+    	    align-items: center; /* 水平居中内容 */
+     	    padding: 10px; /* 添加内边距 */
+    	    box-sizing: border-box;
+	 	}
+        img {
+            max-width: 100%; /* 图片最大宽度不超过容器 */
+            max-height: 100%; /* 图片最大高度不超过容器 */
+        }
+        p {
+            color: red; /* 设置文字颜色为红色 */
+            font-size: 100px; /* 根据视口宽度动态调整字体大小 */
+            margin: 0; /* 移除段落默认外边距 */
+            line-height: 100vh; /* 行高等于视口高度，使文本垂直填充 */
+            word-wrap: break-word; /* 如果文字过长，自动换行 */
+        }
+    </style>	
+</head>
+<body>
+    <div class="fullscreen-container">
+	<p>你好啊，我的朋友！</p>
+    </div>
+</body>
+</html>
